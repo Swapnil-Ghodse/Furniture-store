@@ -1,15 +1,16 @@
-import { useState } from 'react'
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Router from "./routes/PageRouter";
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const router =  Router;
 
   return (
     <>
-      <h1 class="text-6xl font-bold underline">
-    Hello world!
-  </h1>
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
