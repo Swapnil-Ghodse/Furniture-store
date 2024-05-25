@@ -1,9 +1,11 @@
 import { Outlet } from 'react-router-dom'
+import {Header, Navbar} from '../components/index'
 
 function HomeLayout() {
   return (
     <>
-      <div className='text-xl'>HomeLayout</div>
+      <Header />
+      <Navbar />
       <section className='align-elements py-20'>
         <Outlet/>
       </section>

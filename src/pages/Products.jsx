@@ -1,9 +1,14 @@
-import React from 'react'
+import { Filter, PaginationContainer, ProductContainer } from "../components";
 
+export const loader = async ({request}) => {
+  return null;
+}
 function Products() {
-  return (
-    <div>Products</div>
-  )
+  return (<>
+      <Filter/>
+      <ProductContainer />
+      <PaginationContainer />    
+    </>)
 }
 
 export default Products

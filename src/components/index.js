@@ -1,2 +1,15 @@
 export {default as FormInput } from './FormInput';
 export {default as SubmitBtn} from './SubmitBtn';
+export {default as Header} from './Header';
+export {default as Navbar} from './Navbar';
+export {default as NavLinks} from './NavLinks';
+export {default as Hero } from './Hero';
+export {default as ErrorElement} from './ErrorElement';
+export {default as ProductGrid} from './ProductGrid';
+export {default as SectionTitle} from './SectionTitle';
+export {default as FeaturedProduct} from './FeaturedProduct';
+export {default as ProductContainer} from './ProductContainer';
+export {default as Filter } from './Filter';
+export {default as PaginationContainer} from './PaginationContainer';
+
+
