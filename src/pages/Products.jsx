@@ -1,7 +1,14 @@
 import { Filter, PaginationContainer, ProductContainer } from "../components";
+import { customAPI } from "../utils/utils";
 
+const url = '\products';
 export const loader = async ({request}) => {
-  return null;
+  const response = await customAPI(url);
+  
+  const products = response.data.data;
+  const meta = response.data.meta;
+
+  return {products, meta};
 }
 function Products() {
   return (<>

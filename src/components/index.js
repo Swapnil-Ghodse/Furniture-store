@@ -11,5 +11,6 @@ export {default as FeaturedProduct} from './FeaturedProduct';
 export {default as ProductContainer} from './ProductContainer';
 export {default as Filter } from './Filter';
 export {default as PaginationContainer} from './PaginationContainer';
+export {default as Loading} from './Loading';
 
 
