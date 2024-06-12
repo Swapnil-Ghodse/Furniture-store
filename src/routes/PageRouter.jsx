@@ -17,8 +17,8 @@ import { ErrorElement } from "../components";
 
 //loader
 import { loader as landingLoader } from "../pages/Landing";
-import {loader as singlepageLoader} from '../pages/SingleProduct';
-import {loader as productsPageLoader} from '../pages/Products';
+import { loader as singlepageLoader} from '../pages/SingleProduct';
+import { loader as productsPageLoader} from '../pages/Products';
 
 const Router = createBrowserRouter([
     {

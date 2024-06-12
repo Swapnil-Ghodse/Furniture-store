@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { formatPrice } from "../utils/utils";
 
-function FormRange({ label, name, minRange, maxRange, size }) {
+function FormRange({ label, name, minRange, maxRange, size, price }) {
     const step = maxRange/100;
-    const [selectedPrice, setSelectedprice] = useState(maxRange);
+    const [selectedPrice, setSelectedprice] = useState(price || maxRange);
   return (
     <div className="form-control">
       <label htmlFor={name} className="label cursor-pointer">
@@ -12,7 +12,7 @@ function FormRange({ label, name, minRange, maxRange, size }) {
       </label>
       <input
         type="range"
-        name="name"
+        name={name}
         min={minRange}
         max={maxRange}
         value={selectedPrice}

@@ -9,8 +9,6 @@ function ProductContainer() {
   const [layout, setLayout] = useState('grid');
   const totalProducts = meta.pagination.total;
 
-  console.log(meta)
-
   const setLayoutStyle = (pattern) => {
     return `text-xl btn btn-circle btn-sm ${
       pattern === layout
